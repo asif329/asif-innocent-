@@ -7,14 +7,25 @@
         <h1 id="title">Survey form</h1>
         <p id="description">Please fill this form</p>
         <form id="survey-form">
-            <label id="name-label" for="name">Name</label>
+           <div> <label id="name-label" for="name">Name</label>
             <input id="name" placeholder="name" type="text" required>
+        </div>
+
+            
+        <div>
             <label id="email-label" for="email">Email</label>
             <input id="email" Placeholder="email" type="email" required>
-            <label id="number-label" for="number">Number</label>
+        </div>
+            
+        <div><label id="number-label" for="number">Number</label>
             <input id="number" type="number" placeholder="number" min="10" max="99" required>
-            <label id="dropdown-label" for="drowpdown"></label>
+        </div>
+
+            <div>
+                <label id="dropdown-label" for="drowpdown"></label>
             <select id="dropdown"></select>
+            </div>
+                <div>
             <p>Would you recommend Us to a friend?</p>
             <label>
                 <input
@@ -24,14 +35,17 @@
                   class="input-radio"
                   checked
                 />Definitely</label>
+                </div>
 
-                <input
+               <div> <input
                 name="user-recommend"
                 value="maybe"
                 type="radio"
                 class="input-radio"
               />Maybe</label>
-              <p>What is your favorite feature of US?</p>
+               </div>
+              <div>
+                <p>What is your favorite feature of US?</p>
               <select id="most-like" name="mostLike" class="form-control" required>
                 <option disabled selected value>Select an option</option>
                 <option value="challenges">Challenges</option>
@@ -39,6 +53,14 @@
                 <option value="community">Community</option>
                 <option value="openSource">Open Source</option>
               </select>
+              </div>
+              <div>
+              <textarea placeholder="Enter Your comments"></textarea>
+              </div>
+              <div>
+              <button id="Submit">Submit</button>
+              </div>
+        </form>
  
     </body>
 </html>
